@@ -23,7 +23,9 @@ public class Task7 {
         String letter = scanner.nextLine();
         
         
-        int n = str.replaceAll(letter, "").length();
+        
+        int n = str.length()-str.replaceAll(letter, "").length();
+        
         /*while (str.indexOf(letter)<0){
             
             n=n+1;
