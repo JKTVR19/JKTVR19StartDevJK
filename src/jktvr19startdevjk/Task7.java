@@ -22,14 +22,17 @@ public class Task7 {
         System.out.println("Введите букву: ");
         String letter = scanner.nextLine();
         
-        int n = 0;
         
-        while (str.indexOf(letter)<0){
-            n++;
-        }
+        int n = str.replaceAll(letter, "").length();
+        /*while (str.indexOf(letter)<0){
+            
+            n=n+1;
+            str=str.replace(letter, " ");
+        }*/
         
         
         System.out.println("Буква \""+letter+"\" встречается в тексте "+ n + "раз");
+        System.out.println("str: "+str);/*отладка*/
         System.out.println("");
         System.out.println("----- конец задачи 6 ------");
     }
